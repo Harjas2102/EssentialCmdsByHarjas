@@ -1,5 +1,8 @@
 package com.gmail.harjassingh02.JavaProgrammingTest;
 
+import com.gmail.harjassingh02.JavaProgrammingTest.commands.GamemodeCreativeCommand;
+import com.gmail.harjassingh02.JavaProgrammingTest.commands.GamemodeSurvivalCommand;
+import com.gmail.harjassingh02.JavaProgrammingTest.commands.HelloCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

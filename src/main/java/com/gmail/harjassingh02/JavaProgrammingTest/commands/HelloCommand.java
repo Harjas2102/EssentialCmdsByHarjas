@@ -1,4 +1,4 @@
-package com.gmail.harjassingh02.JavaProgrammingTest;
+package com.gmail.harjassingh02.JavaProgrammingTest.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
