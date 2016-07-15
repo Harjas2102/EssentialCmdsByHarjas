@@ -13,6 +13,8 @@ public class HarjasTestPlugin extends JavaPlugin{
     @Override
     public void onEnable() {
         getCommand("Hello").setExecutor(new HelloCommand());
+        getCommand("gmc").setExecutor(new GamemodeCreativeCommand());
+        getCommand("gms").setExecutor(new GamemodeSurvivalCommand());
     }
 
     @Override

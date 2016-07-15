@@ -5,9 +5,12 @@ main: com.gmail.harjassingh02.JavaProgrammingTest.HarjasTestPlugin
 commands:
   Hello:
     description: Sends the player a marvelous message.
-  Bye:
-    description: Kicks the player from the server.
-  gm:
+  gmc:
+    description: Changes the players gamemode to creative.
+  gms:
+      description: Changes the players gamemode to survival.
+ #Bye:
+     #description: Kicks the player from the server. (This command is currently disabled as we sort out its permissions.)
 
 
 
