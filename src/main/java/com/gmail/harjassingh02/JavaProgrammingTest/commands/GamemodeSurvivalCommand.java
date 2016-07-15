@@ -11,14 +11,15 @@ public class GamemodeSurvivalCommand implements CommandExecutor {
 
 
     public boolean onCommand(CommandSender sender, Command command, String s, String[] strings) {
-
         if (sender instanceof Player) {
             if (sender.hasPermission("cmds.gms") || sender.isOp()) {
                 Player p = (Player) sender;
+
                 p.setGameMode(GameMode.SURVIVAL);
                 p.sendMessage("Your game mode has been updated");
+            } else {
+                sender.sendMessage(ChatColor.DARK_RED + "You do not have permission to use this command!");
             }
-            else sender.sendMessage(ChatColor.DARK_RED + "You do not have permission to use this command!");
         }
 
         return false;

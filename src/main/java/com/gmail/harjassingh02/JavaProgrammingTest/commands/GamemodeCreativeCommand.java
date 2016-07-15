@@ -8,20 +8,18 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class GamemodeCreativeCommand implements CommandExecutor {
-
-
     public boolean onCommand(CommandSender sender, Command command, String s, String[] strings) {
-
         if (sender instanceof Player) {
             if (sender.hasPermission("cmds.gmc") || sender.isOp()) {
                 Player p = (Player) sender;
+
                 p.setGameMode(GameMode.CREATIVE);
                 p.sendMessage("Your game mode has been updated");
+            } else {
+                sender.sendMessage(ChatColor.DARK_RED + "You do not have permission to use this command!");
             }
-            else sender.sendMessage(ChatColor.DARK_RED + "You do not have permission to use this command!");
         }
 
         return false;
     }
 }
-
