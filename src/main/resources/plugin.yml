@@ -1,0 +1,14 @@
+name: EssentialsCmdsByHarjas
+version: 1.0
+main: com.gmail.harjassingh02.JavaProgrammingTest.HarjasTestPlugin
+
+commands:
+  Hello:
+    description: Sends the player a marvelous message.
+  Bye:
+    description: Kicks the player from the server.
+  gm:
+
+
+
+
