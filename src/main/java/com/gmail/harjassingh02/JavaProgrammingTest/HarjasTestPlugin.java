@@ -40,7 +40,7 @@ public class HarjasTestPlugin extends JavaPlugin {
                     List<Player> p = Bukkit.matchPlayer(args[0]);
 
                     if (p.isEmpty()) {
-                        sender.sendMessage("That player is not online!");
+                        sender.sendMessage("The specified player is not online!");
                         return true;
                     }
 
