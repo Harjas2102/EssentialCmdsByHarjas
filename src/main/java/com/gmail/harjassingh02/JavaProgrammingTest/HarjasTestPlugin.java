@@ -17,7 +17,9 @@ public class HarjasTestPlugin extends JavaPlugin {
     public void onEnable() {
         getCommand("Hello").setExecutor(new HelloCommand());
         getCommand("gmc").setExecutor(new GamemodeCreativeCommand());
-        getCommand("gms").setExecutor(new GamemodeSurvivalCommand());
+        getCommand("gms").setExecutor(new GamemodeSurvivalCommand()); /*
+        getCommand("setjail").setExecutor(new SetJailCommand());
+        getCommand("jail").setExecutor(new JailCommand());*/
     }
 
     @Override
